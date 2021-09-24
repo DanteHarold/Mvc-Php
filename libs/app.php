@@ -16,9 +16,7 @@
             if(file_exists($archivoController)){   
                 require_once $archivoController;
                 $controller = new $url[0];
-
-                //Valido Si existe el Método
-
+                //Valida Si existe el Método
                 if(isset($url[1])){
                     $controller->{$url[1]}();
                 }

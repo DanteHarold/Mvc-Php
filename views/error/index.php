@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1><?php echo $this->mensaje; ?></h1>
+    <?php require_once("views/header.php"); ?>
+    <div id = "main">
+        <h1 class="center error"><?php echo $this->mensaje; ?></h1>
+    </div>
+        <?php require_once("views/footer.php"); ?>
 </body>
 </html>

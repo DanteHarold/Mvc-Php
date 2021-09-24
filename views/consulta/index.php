@@ -9,8 +9,9 @@
 <body>
     <?php require_once("views/header.php"); ?>
     <div id="main">
-        <h1 class="center">Seccion de Ayuda</h1>
+        <h1 class="center">Seccion de Consulta</h1>
     </div>
     <?php require_once("views/footer.php"); ?>
+   
 </body>
 </html>

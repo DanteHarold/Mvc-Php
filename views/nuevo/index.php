@@ -13,15 +13,15 @@
         <form action="<?php echo constant('URL') ?>nuevo/registrarAlumno" method="POST">
             <p>
                 <label for="matricula">Matricula</label>
-                <input type="text" name="matricula" id="">
+                <input type="text" name="matricula" id="" required>
             </p>
             <p>
                 <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="">
+                <input type="text" name="nombre" id="" required>
             </p>
             <p>
                 <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" id="">
+                <input type="text" name="apellido" id="" required>
             </p>
             <p>
                 <input type="submit" value="Registrar Nuevo Alumno">

@@ -1,5 +1,6 @@
 const botones = document.querySelectorAll(".bEliminar");
 
+/*
 botones.forEach(boton => {
 
     boton.addEventListener("click", function(){
@@ -34,3 +35,20 @@ function httpRequest(url, callback){
         }
     }
 }
+*/
+
+botones.forEach(boton => {
+boton.addEventListener('click',()=>{
+    const matricula = boton.dataset.matricula;
+    fetch('http://localhost/Mvc-Php/consulta/eliminarAlumno/' + matricula)
+    .then(res => res.ok ? Promise.resolve(res) : Promise.reject(res))
+    .then(res => res.text())
+    .then(res => {
+        document.querySelector("#respuesta").innerHTML = res;
+        const tbody = document.getElementById('tbody-alumnos');
+        const fila  = document.getElementById(`fila-${matricula}`);
+        console.log(fila);
+        tbody.removeChild(fila);
+    })
+})
+});

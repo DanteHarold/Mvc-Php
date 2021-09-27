@@ -10,6 +10,7 @@
     <?php require_once("views/header.php"); ?>
     <div id="main">
         <h1 class="center">Seccion de Consulta</h1>
+        <div id="respuesta" class="center"></div>
         <table width="100%">
             <thead>
                 <tr>

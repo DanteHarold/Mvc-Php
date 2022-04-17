@@ -47,17 +47,17 @@
             $matricula = $param[0];
 
             if ($this->model->delete($matricula)){
-                $mensaje = "Alumno Eliminado Correctamente";
-               // $this->view->mensaje = "Alumno Eliminado Correctamente";
+               // $mensaje = "Alumno Eliminado Correctamente";
+                $this->view->mensaje = "Alumno Eliminado Correctamente";
 
             }else{
                 //Error al Actualizar
-                $mensaje = "Error al Eliminar Alumno";
-                //$this->view->mensaje = "Error al Eliminar al Alumno ";
+                //$mensaje = "Error al Eliminar Alumno";
+                $this->view->mensaje = "Error al Eliminar al Alumno ";
             }
             //$this->render();
             
-            echo $mensaje;
+            //echo $mensaje;
         }
         
     }
